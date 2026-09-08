@@ -12,35 +12,35 @@ Work top-down; the first section will stop the site being usable if it ships as-
   used everywhere else on the site. Do not "correct" it in a later edit.
 - **Telephone:** `07949 228123`, rendered as `tel:+447949228123` in links and
   `+44 7949 228123` in the structured data.
-- **Location:** United Kingdom. The `PostalAddress` in the structured data now carries
-  `addressCountry: GB` and nothing else, because no registered locality has been
-  confirmed — see the note in section 2.
+- **Company:** Britannia IoT Solutions Ltd, registered in England and Wales, company
+  number **17399940**, incorporated 14 August 2026, status Active — verified against
+  Companies House. Registered office 71-75 Shelton Street, Covent Garden, London
+  WC2H 9JQ. This renders as the statutory footer line on every page, and as a `GB-COH`
+  identifier plus a full `PostalAddress` in the Organization schema.
+- **Location:** London, matching the registered office.
 
 One thing worth doing when you have a moment: you own the domain, so a mailbox at it
 (`hello@britanniaiot.co.uk`, forwarding to the Outlook account) would cost nothing and
 reads better on a tender return than a free webmail address. Purely cosmetic — the site
 works exactly as it is.
 
-## 2. Placeholders that must be replaced
+## 2. Still to add
 
-All of these live in the `SITE` dict at the top of `_src/build.py`. Change them there and
-run `python3 _src/build.py` — they propagate to every page, the structured data, the
-footer and `llms.txt`.
+These live in the `SITE` dict at the top of `_src/build.py`. Change them there and run
+`python3 _src/build.py` — they propagate to every page, the structured data, the footer
+and `llms.txt`.
 
-| Field | Current value | Note |
-| --- | --- | --- |
-| `legal` | `Britannia IoT Solutions Ltd` | Confirm the exact registered name. |
+- **VAT number** — `vat_number` is empty. Once registered, adding it appends a sentence to
+  the footer disclosure and a `vatID` to the schema automatically.
+- **Profile URLs** — `profiles` is empty, so no `sameAs` is emitted. Add a LinkedIn company
+  page or Google Business Profile URL there once they genuinely exist.
+- **ICO registration number** — needed in the privacy notice.
 
-Also add, once you have them: company registration number and registered office in the
-footer (a legal requirement for a UK limited company's website), VAT number if registered,
-and the ICO registration number in the privacy notice.
-
-**Locality for local SEO.** The structured data currently claims only `addressCountry: GB`,
-which is accurate but generic. If you want to rank for "waste sensors <town>" style
-queries, or appear in Google's local results, add a real town or city to `SITE` and
-reinstate `addressLocality` in `org_node()`. Do not invent one — an address that does not
-match Companies House or a Google Business Profile hurts entity resolution rather than
-helping it.
+**71-75 Shelton Street is a formation agent's address.** Entirely legal and used by
+thousands of companies, but it is well known as such, and council procurement teams do
+occasionally look up suppliers. If you ever take a real trading address, update
+`registered_office`, `street` and `postcode` in `SITE`. Not a problem, just worth knowing
+someone might notice.
 
 **The number is a mobile.** That is entirely workable and plenty of small suppliers run
 this way, but council procurement teams do read a mobile-only contact as a sole-trader

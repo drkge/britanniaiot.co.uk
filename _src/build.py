@@ -42,7 +42,16 @@ SITE = {
     "phone": "+44 7949 228123",          # E.164, used for tel: links and schema
     "phone_display": "07949 228123",     # as shown on the page
     "country": "GB",
-    "founded": "2026",
+    "founded": "2026-08-14",   # incorporation date, company 17399940
+    # Companies House details. The footer statutory line and the schema.org
+    # identifier render ONLY when company_number is non-empty — never put a
+    # placeholder here, it is a legally significant identifier.
+    "company_number": "17399940",
+    "registered_in": "England and Wales",
+    "registered_office": "71-75 Shelton Street, Covent Garden, London WC2H 9JQ",
+    "street": "71-75 Shelton Street, Covent Garden",
+    "postcode": "WC2H 9JQ",
+    "vat_number": "",               # omit until VAT registered
     # Profile URLs for schema.org sameAs. Add real ones only — a sameAs
     # pointing at a page that does not exist weakens entity resolution.
     "profiles": [],
@@ -237,6 +246,19 @@ def cta_section(p: Page) -> str:
 </section>"""
 
 
+def legal_line() -> str:
+    """Companies Act 2006 disclosure. Renders nothing until real details exist."""
+    if not SITE["company_number"]:
+        return ""
+    bits = [f'{SITE["legal"]} is a company registered in '
+            f'{SITE["registered_in"]}, company number {SITE["company_number"]}.']
+    if SITE["registered_office"]:
+        bits.append(f'Registered office: {SITE["registered_office"]}.')
+    if SITE["vat_number"]:
+        bits.append(f'VAT registration number {SITE["vat_number"]}.')
+    return ('<div class="footer-legal"><p>' + " ".join(bits) + "</p></div>")
+
+
 def footer() -> str:
     cols = []
     for title, links in FOOTER_COLS:
@@ -257,6 +279,7 @@ def footer() -> str:
       </div>
       {"".join(cols)}
     </div>
+    {legal_line()}
     <div class="footer-bottom">
       <p class="mb-0">&copy; {year} {SITE['legal']}. All rights reserved.</p>
       <ul>
@@ -322,6 +345,9 @@ def org_node() -> dict:
         "telephone": SITE["phone"],
         "address": {
             "@type": "PostalAddress",
+            "streetAddress": SITE["street"],
+            "addressLocality": "London",
+            "postalCode": SITE["postcode"],
             "addressCountry": "GB",
         },
         "areaServed": [
@@ -341,6 +367,13 @@ def org_node() -> dict:
             "Bin fill-level monitoring",
             "Fleet mileage and CO2 reduction",
         ],
+        **({"identifier": {
+            "@type": "PropertyValue",
+            "propertyID": "GB-COH",
+            "name": "Companies House company number",
+            "value": SITE["company_number"],
+        }} if SITE["company_number"] else {}),
+        **({"vatID": SITE["vat_number"]} if SITE["vat_number"] else {}),
         **({"sameAs": SITE["profiles"]} if SITE["profiles"] else {}),
         "contactPoint": [{
             "@type": "ContactPoint",
