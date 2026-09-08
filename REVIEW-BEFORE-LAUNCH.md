@@ -10,6 +10,11 @@ Work top-down; the first section will stop the site being usable if it ships as-
 - **Email:** `britianniaiot@outlook.com` — confirmed as registered, including the
   `britiannia` spelling, which deliberately differs from the *Britannia* brand name
   used everywhere else on the site. Do not "correct" it in a later edit.
+- **Telephone:** `07949 228123`, rendered as `tel:+447949228123` in links and
+  `+44 7949 228123` in the structured data.
+- **Location:** United Kingdom. The `PostalAddress` in the structured data now carries
+  `addressCountry: GB` and nothing else, because no registered locality has been
+  confirmed — see the note in section 2.
 
 One thing worth doing when you have a moment: you own the domain, so a mailbox at it
 (`hello@britanniaiot.co.uk`, forwarding to the Outlook account) would cost nothing and
@@ -24,14 +29,24 @@ footer and `llms.txt`.
 
 | Field | Current value | Note |
 | --- | --- | --- |
-| `phone` / `phone_display` | `+44 20 7946 0421` | **Ofcom's reserved drama range.** It cannot ring a real line, which is why it is safe as a placeholder — and why it must be replaced before launch. |
-| `locality` | `London` | Used in `PostalAddress`. Change or drop for the real registered location. |
 | `linkedin` | speculative URL | Remove from `sameAs` until the page actually exists — a dead `sameAs` weakens entity resolution rather than helping it. |
 | `legal` | `Britannia IoT Solutions Ltd` | Confirm the exact registered name. |
 
 Also add, once you have them: company registration number and registered office in the
 footer (a legal requirement for a UK limited company's website), VAT number if registered,
 and the ICO registration number in the privacy notice.
+
+**Locality for local SEO.** The structured data currently claims only `addressCountry: GB`,
+which is accurate but generic. If you want to rank for "waste sensors <town>" style
+queries, or appear in Google's local results, add a real town or city to `SITE` and
+reinstate `addressLocality` in `org_node()`. Do not invent one — an address that does not
+match Companies House or a Google Business Profile hurts entity resolution rather than
+helping it.
+
+**The number is a mobile.** That is entirely workable and plenty of small suppliers run
+this way, but council procurement teams do read a mobile-only contact as a sole-trader
+signal. A cheap non-geographic or VoIP landline forwarding to it removes that impression
+for a few pounds a month. Cosmetic, not urgent.
 
 ## 3. The mailbox is the only way in
 
@@ -41,7 +56,7 @@ third-party processor in the privacy notice — but it does mean **an unmonitore
 dead site**. `britianniaiot@outlook.com` needs to be somewhere it will actually be seen,
 and whoever answers it needs to know about the one-working-day commitment the site makes.
 
-The phone number is still the placeholder from section 2. A visitor calling it gets nothing.
+The telephone number is real, so the site can now be shared without anyone reaching a dead line.
 
 ## 4. Claims I made that you need to be able to stand behind
 

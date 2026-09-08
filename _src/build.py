@@ -39,10 +39,8 @@ SITE = {
         "that only go where there is waste."
     ),
     "email": "britianniaiot@outlook.com",
-    # Ofcom's reserved drama range — safe placeholder, cannot ring a real line.
-    "phone": "+44 20 7946 0421",
-    "phone_display": "020 7946 0421",
-    "locality": "London",
+    "phone": "+44 7949 228123",          # E.164, used for tel: links and schema
+    "phone_display": "07949 228123",     # as shown on the page
     "country": "GB",
     "founded": "2026",
     "linkedin": "https://www.linkedin.com/company/britannia-iot-solutions",
@@ -322,7 +320,6 @@ def org_node() -> dict:
         "telephone": SITE["phone"],
         "address": {
             "@type": "PostalAddress",
-            "addressLocality": SITE["locality"],
             "addressCountry": "GB",
         },
         "areaServed": [
