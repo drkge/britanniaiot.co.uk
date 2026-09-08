@@ -29,7 +29,6 @@ footer and `llms.txt`.
 
 | Field | Current value | Note |
 | --- | --- | --- |
-| `linkedin` | speculative URL | Remove from `sameAs` until the page actually exists — a dead `sameAs` weakens entity resolution rather than helping it. |
 | `legal` | `Britannia IoT Solutions Ltd` | Confirm the exact registered name. |
 
 Also add, once you have them: company registration number and registered office in the
@@ -128,7 +127,10 @@ Two things worth checking with your supplier before launch:
 1. **Google Search Console and Bing Webmaster Tools** — verify the domain and submit
    `https://britanniaiot.co.uk/sitemap.xml`. Bing matters more than usual here: it feeds ChatGPT search.
 2. **Google Business Profile** — add `sameAs` to the `Organization` JSON-LD once live.
-3. **A LinkedIn company page**, then add the real URL to `SITE["linkedin"]`.
+3. **A LinkedIn company page**, then add the real URL to the `profiles` list in `SITE`.
+   The `sameAs` property is emitted only when that list is non-empty, so adding a URL
+   there is all it takes — and leaving it empty is the correct state until the page
+   genuinely exists. Same applies to a Google Business Profile or Companies House URL.
 4. **Get cited off-site.** AI answer engines weight third-party mentions heavily. The
    highest-value targets are LinkedIn, LetsRecycle, MRW, Resource Magazine, the local
    authority trade press, and supplier directories such as APSE and the ESPO/YPO

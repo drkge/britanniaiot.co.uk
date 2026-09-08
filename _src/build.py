@@ -43,7 +43,9 @@ SITE = {
     "phone_display": "07949 228123",     # as shown on the page
     "country": "GB",
     "founded": "2026",
-    "linkedin": "https://www.linkedin.com/company/britannia-iot-solutions",
+    # Profile URLs for schema.org sameAs. Add real ones only — a sameAs
+    # pointing at a page that does not exist weakens entity resolution.
+    "profiles": [],
     "updated": "2026-09-05",
 }
 
@@ -339,7 +341,7 @@ def org_node() -> dict:
             "Bin fill-level monitoring",
             "Fleet mileage and CO2 reduction",
         ],
-        "sameAs": [SITE["linkedin"]],
+        **({"sameAs": SITE["profiles"]} if SITE["profiles"] else {}),
         "contactPoint": [{
             "@type": "ContactPoint",
             "contactType": "sales",
