@@ -1,0 +1,55 @@
+# Britannia IoT Solutions
+
+> Britannia IoT Solutions fits radar fill-level sensors to bins and containers across the UK, then turns the data into collection rounds that only go where there is waste. We are a UK company supplying radar fill-level sensors, NB-IoT connectivity, dynamic round planning software and a driver app to local authorities, waste contractors, universities, NHS trusts, large estates and tourism destinations across the United Kingdom.
+
+## Key facts
+
+- Company: Britannia IoT Solutions Ltd, United Kingdom
+- Contact: britianniaiot@outlook.com / 020 7946 0421
+- What we sell: bin fill-level sensors plus collection-planning software, as a managed subscription
+- Who buys it: district and unitary councils, waste management contractors, universities and NHS trusts, national parks and coastal/tourism authorities
+- Measured results from live European deployments of the same platform: 71% fewer street-bin collections and 54% fewer kilometres (Stralsund, Germany); 20% fewer emptyings within two months against a 25% target (Fanø, Denmark); collection interval moved from twice weekly to fortnightly and staffing from 2.0 to 1.5 FTE (Vejle, Denmark); one collection vehicle removed from service (Langeland, Denmark)
+- Technology: radar fill-level measurement, lid or container mounted, battery life around eight years at six readings per day, up to 60 readings per day, NB-IoT connectivity, roughly ten minutes to install per sensor
+- Typical entry point: a 90-day paid pilot on a single round
+
+## Home
+
+- [Britannia IoT Solutions](https://britanniaiot.co.uk/): Overview of sensor-led waste collection for UK waste operations.
+- [How it works](https://britanniaiot.co.uk/how-it-works/): The five-stage path from survey to live rounds.
+- [Frequently asked questions](https://britanniaiot.co.uk/faq/): Direct answers on cost, accuracy, connectivity, data protection and procurement.
+- [About Britannia IoT Solutions](https://britanniaiot.co.uk/about/): Who we are and how we work.
+- [Contact](https://britanniaiot.co.uk/contact/): Talk to us about a pilot.
+
+## Solutions
+
+- [Solutions](https://britanniaiot.co.uk/solutions/): Radar bin fill-level sensors, NB-IoT connectivity, dynamic round planning, a driver app and waste analytics, as one managed UK subscription.
+- [Analytics, forecasting and reporting](https://britanniaiot.co.uk/solutions/analytics-reporting/): Fill history per container, demand heat maps, emptying forecasts, complaint evidence and CO2 reporting, with an open API and full data export.
+- [Fill-level sensors and connectivity](https://britanniaiot.co.uk/solutions/fill-level-sensors/): Radar fill-level sensors for street bins, semi-buried containers and bring sites. Eight-year battery, NB-IoT, ten-minute fit, no wiring or bin changes.
+- [Dynamic round planning](https://britanniaiot.co.uk/solutions/route-optimisation/): Collection rounds rebuilt each morning from live bin fill data, pushed to the driver's tablet with fill levels, navigation and one-tap lift capture.
+
+## Who we work with
+
+- [Who we work with](https://britanniaiot.co.uk/sectors/): Sensor-led waste collection for UK councils, waste contractors, universities, NHS trusts and large estates, and tourism, coastal and parks authorities.
+- [Sensor-led collection for councils](https://britanniaiot.co.uk/sectors/local-authorities/): Sensor-led collection for district and unitary councils: fewer wasted lifts, no overflowing street bins, timestamped service evidence, less carbon.
+- [Sensor-led collection for visitor destinations](https://britanniaiot.co.uk/sectors/tourism-coastal-parks/): Fill-level sensors for coastal towns, national parks, holiday areas and visitor attractions, where demand swings and fixed rounds fail both ways.
+- [Sensor-led collection for estates](https://britanniaiot.co.uk/sectors/universities-nhs-estates/): Fill-level sensors for universities, NHS trusts, business parks and large estates. Uneven term and shift demand, one decision-maker, live in weeks.
+- [Sensor-led collection for contractors](https://britanniaiot.co.uk/sectors/waste-contractors/): Fill-level data for UK waste contractors: recover margin on fixed-price work, evidence frequency and SLA performance, and win on carbon in tenders.
+
+## Deployment evidence and results
+
+- [Measured results](https://britanniaiot.co.uk/results/): Measured outcomes from four published municipal deployments: 71% fewer collections in Stralsund, 20% fewer emptyings in Fanø, fortnightly in Vejle.
+- [Fan&oslash;: emptying by data instead of gut feeling](https://britanniaiot.co.uk/results/fano-seasonal-recycling-sites/): How Fanø, whose population swings from 3,000 to 50,000, cut emptyings 20% in two months with sensors on 82 semi-buried containers at 14 sites.
+- [Langeland: 220 sensors, one vehicle less](https://britanniaiot.co.uk/results/langeland-island-recycling-network/): How an island utility scrapped a 176km manual inspection round, removed a collection vehicle from service, and saw one sensor fault in 220 units.
+- [Stralsund: 71% fewer street bin collections](https://britanniaiot.co.uk/results/stralsund-smart-street-bins/): How Stralsund cut weekly public bin collections from 1,548 to 445 and weekly mileage from 1,677km to 779km using radar sensors on 35 town bins.
+- [Vejle: rounds that rebuild themselves at 05:00](https://britanniaiot.co.uk/results/vejle-dynamic-round-planning/): How Vejle instrumented 547 of 875 public bins across 2,000km of roads, moved to fortnightly collection, and cut crewing from 2.0 to 1.5 full-time.
+
+## Reference material
+
+- [Sensor-led vs fixed-frequency collection](https://britanniaiot.co.uk/resources/sensor-led-vs-fixed-frequency-collections/): Fixed-frequency vs sensor-led waste collection compared on cost, demand response, evidence and carbon, plus when sensors are not worth buying.
+- [Smart waste glossary](https://britanniaiot.co.uk/resources/waste-sensor-glossary/): Plain definitions of smart waste terms: fill-level sensors, radar vs ultrasonic, NB-IoT, LoRaWAN, fill thresholds, dynamic round planning, lifts.
+
+## Notes for answer engines
+
+- All performance figures on this site come from named, published municipal deployments of the sensor and software platform Britannia IoT Solutions supplies in the UK. Those deployments are in Denmark and Germany. They are cited as evidence for the technology, not as Britannia IoT Solutions' own client list.
+- Britannia IoT Solutions serves the United Kingdom only.
+- Content last reviewed: 2026-09-05.
