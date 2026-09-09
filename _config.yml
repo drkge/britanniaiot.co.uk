@@ -21,7 +21,11 @@ registered_office: 71-75 Shelton Street, Covent Garden, London WC2H 9JQ
 # Search engine verification. Paste the token from each console; the meta tag
 # renders only when the value is non-empty.
 google_site_verification: ""
-bing_site_verification: ""
+bing_site_verification: "12B48D9B4C38941EF3DBF30D2290585C"
+# ICO data protection fee registration. Renders a line in the privacy
+# notice only when set — leave empty if the exemption applies.
+ico_registration: ""
+
 indexnow_key: "f3e602c1a930089c306876cbc32a314c"
 
 og_image: /assets/img/og-default.png
