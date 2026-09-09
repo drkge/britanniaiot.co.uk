@@ -1,0 +1,96 @@
+{
+  "@type": "Organization",
+  "@id": "https://britanniaiot.co.uk/#organization",
+  "name": "Britannia IoT Solutions",
+  "legalName": "Britannia IoT Solutions Ltd",
+  "alternateName": [
+    "Britannia IoT",
+    "Britannia IOT Solutions"
+  ],
+  "url": "https://britanniaiot.co.uk/",
+  "logo": {
+    "@type": "ImageObject",
+    "@id": "https://britanniaiot.co.uk/#logo",
+    "url": "https://britanniaiot.co.uk/assets/img/logo.png",
+    "contentUrl": "https://britanniaiot.co.uk/assets/img/logo.png",
+    "width": 512,
+    "height": 512,
+    "caption": "Britannia IoT Solutions"
+  },
+  "image": {
+    "@id": "https://britanniaiot.co.uk/#logo"
+  },
+  "description": "Britannia IoT Solutions fits radar fill-level sensors to bins and containers across the UK, then turns the data into collection rounds that only go where there is waste.",
+  "slogan": "Sensor-led waste collection for UK councils and contractors",
+  "foundingDate": "2026-08-14",
+  "email": "britianniaiot@outlook.com",
+  "telephone": "+44 7949 228123",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "71-75 Shelton Street, Covent Garden",
+    "addressLocality": "London",
+    "postalCode": "WC2H 9JQ",
+    "addressCountry": "GB"
+  },
+  "areaServed": [
+    {
+      "@type": "Country",
+      "name": "United Kingdom"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "England"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Scotland"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Wales"
+    },
+    {
+      "@type": "AdministrativeArea",
+      "name": "Northern Ireland"
+    }
+  ],
+  "knowsAbout": [
+    "Waste collection route optimisation",
+    "Ultrasonic and radar fill-level sensors",
+    "NB-IoT sensor networks",
+    "Municipal waste management",
+    "Smart city waste infrastructure",
+    "Recycling site monitoring",
+    "Bin fill-level monitoring",
+    "Fleet mileage and CO2 reduction"
+  ],
+  "identifier": {
+    "@type": "PropertyValue",
+    "propertyID": "GB-COH",
+    "name": "Companies House company number",
+    "value": "17399940"
+  },
+  "contactPoint": [
+    {
+      "@type": "ContactPoint",
+      "contactType": "sales",
+      "email": "britianniaiot@outlook.com",
+      "telephone": "+44 7949 228123",
+      "areaServed": "GB",
+      "availableLanguage": [
+        "English"
+      ]
+    }
+  ]
+},
+{
+  "@type": "WebSite",
+  "@id": "https://britanniaiot.co.uk/#website",
+  "url": "https://britanniaiot.co.uk/",
+  "name": "Britannia IoT Solutions",
+  "description": "Britannia IoT Solutions fits radar fill-level sensors to bins and containers across the UK, then turns the data into collection rounds that only go where there is waste.",
+  "publisher": {
+    "@id": "https://britanniaiot.co.uk/#organization"
+  },
+  "inLanguage": "en-GB"
+}

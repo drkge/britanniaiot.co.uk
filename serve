@@ -1,9 +1,24 @@
 #!/usr/bin/env bash
-# Local preview. Root-relative links (/solutions/, /assets/...) only resolve when
-# something serves the folder as a site root, so open it this way rather than
-# double-clicking index.html.
+# Local preview. This is a Jekyll site, so the pages must be built before they
+# can be viewed — the .html files in the repo are templates, not finished pages.
 set -e
 cd "$(dirname "$0")"
-PORT="${1:-4173}"
-echo "Britannia IoT -> http://localhost:$PORT/  (ctrl-c to stop)"
-python3 -m http.server "$PORT"
+
+if ! command -v bundle >/dev/null 2>&1 || ! bundle exec jekyll -v >/dev/null 2>&1; then
+  cat <<'MSG'
+Jekyll is not installed for this project. One-time setup:
+
+    bundle install
+
+That needs Ruby 2.7+ (macOS ships 2.6, which github-pages no longer supports):
+
+    brew install ruby
+    echo 'export PATH="/opt/homebrew/opt/ruby/bin:$PATH"' >> ~/.zshrc
+
+Without it you can still push and let GitHub Pages build — it reports failures
+by email and via the Actions tab.
+MSG
+  exit 1
+fi
+
+exec bundle exec jekyll serve --livereload --port "${1:-4173}"

@@ -1,0 +1,22 @@
+<script>
+(function () {
+  var btn = document.querySelector('.nav-toggle');
+  var nav = document.getElementById('primary-nav');
+  if (!btn || !nav) return;
+  function sync() {
+    if (window.matchMedia('(max-width: 900px)').matches) {
+      if (btn.getAttribute('aria-expanded') !== 'true') nav.hidden = true;
+    } else {
+      nav.hidden = false;
+      btn.setAttribute('aria-expanded', 'false');
+    }
+  }
+  btn.addEventListener('click', function () {
+    var open = btn.getAttribute('aria-expanded') === 'true';
+    btn.setAttribute('aria-expanded', String(!open));
+    nav.hidden = open;
+  });
+  window.addEventListener('resize', sync);
+  sync();
+})();
+</script>
