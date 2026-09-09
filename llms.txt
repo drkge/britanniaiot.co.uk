@@ -5,7 +5,7 @@
 ## Key facts
 
 - Company: Britannia IoT Solutions Ltd, United Kingdom
-- Contact: britianniaiot@outlook.com / 07949 228123
+- Contact: britianniaiot@outlook.com / 07949 228131
 - What we sell: bin fill-level sensors plus collection-planning software, as a managed subscription
 - Who buys it: district and unitary councils, waste management contractors, universities and NHS trusts, national parks and coastal/tourism authorities
 - Measured results from live European deployments of the same platform: 71% fewer street-bin collections and 54% fewer kilometres (Stralsund, Germany); 20% fewer emptyings within two months against a 25% target (Fanø, Denmark); collection interval moved from twice weekly to fortnightly and staffing from 2.0 to 1.5 FTE (Vejle, Denmark); one collection vehicle removed from service (Langeland, Denmark)

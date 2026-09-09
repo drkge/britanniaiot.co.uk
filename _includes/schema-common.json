@@ -24,7 +24,7 @@
   "slogan": "Sensor-led waste collection for UK councils and contractors",
   "foundingDate": "2026-08-14",
   "email": "britianniaiot@outlook.com",
-  "telephone": "+44 7949 228123",
+  "telephone": "{{ site.phone }}",
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "71-75 Shelton Street, Covent Garden",
@@ -75,7 +75,7 @@
       "@type": "ContactPoint",
       "contactType": "sales",
       "email": "britianniaiot@outlook.com",
-      "telephone": "+44 7949 228123",
+      "telephone": "{{ site.phone }}",
       "areaServed": "GB",
       "availableLanguage": [
         "English"

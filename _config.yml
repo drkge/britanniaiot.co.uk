@@ -11,8 +11,8 @@ locale: en_GB
 # Contact and company details. Change here, not in the templates — they render
 # into the footer, the contact page and the structured data.
 email: britianniaiot@outlook.com
-phone: "+44 7949 228123"
-phone_display: "07949 228123"
+phone: "+44 7949 228131"
+phone_display: "07949 228131"
 legal_name: Britannia IoT Solutions Ltd
 company_number: "17399940"
 registered_in: England and Wales
