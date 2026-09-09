@@ -118,6 +118,5 @@ Allow: /
 
 User-agent: *
 Allow: /
-Disallow: /_src/
 
 Sitemap: https://britanniaiot.co.uk/sitemap.xml

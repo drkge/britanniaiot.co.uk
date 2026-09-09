@@ -1,3 +1,5 @@
-_src/venv/
-_src/__pycache__/
+# macOS
 .DS_Store
+
+# Claude Code local settings
+.claude/settings.local.json
