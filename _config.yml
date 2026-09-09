@@ -19,7 +19,7 @@ registered_in: England and Wales
 registered_office: 71-75 Shelton Street, Covent Garden, London WC2H 9JQ
 
 og_image: /assets/img/og-default.png
-css_version: "2"
+css_version: "3"
 
 plugins:
   - jekyll-sitemap
@@ -27,6 +27,7 @@ plugins:
 # Files that are not part of the built site.
 exclude:
   - README.md
+  - _tools
   - REVIEW-BEFORE-LAUNCH.md
   - serve
   - Gemfile

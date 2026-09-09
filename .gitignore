@@ -10,3 +10,7 @@ _site/
 .jekyll-metadata
 vendor/
 Gemfile.lock
+
+# Python
+__pycache__/
+*.pyc

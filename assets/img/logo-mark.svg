@@ -1,12 +1,12 @@
 <svg class="logo-mark" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Britannia IoT Solutions">
   <defs>
-    <clipPath id="fv-o"><circle cx="50" cy="50" r="50"/></clipPath>
-    <clipPath id="fv-f"><rect width="50" height="100"/></clipPath>
+    <clipPath id="bm-o"><circle cx="50" cy="50" r="50"/></clipPath>
+    <clipPath id="bm-f"><rect width="50" height="100"/></clipPath>
   </defs>
-  <g clip-path="url(#fv-o)">
+  <g clip-path="url(#bm-o)">
     <g transform="rotate(-45 50 50)">
       <rect x="50" width="50" height="100" fill="#0A1B30"/>
-      <g clip-path="url(#fv-f)">
+      <g clip-path="url(#bm-f)">
         <rect width="100" height="100" fill="#0B2A63"/>
         <path d="M0 0 L100 100 M100 0 L0 100" stroke="#FFFFFF" stroke-width="28"/>
         <g stroke="#CE2540" stroke-width="9.5">
