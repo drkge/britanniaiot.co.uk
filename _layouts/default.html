@@ -18,6 +18,12 @@
   <meta name="publisher" content="{{ site.title }}">
   <meta name="geo.region" content="GB">
   <meta name="coverage" content="United Kingdom">
+  {%- if site.google_site_verification != "" %}
+  <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+  {%- endif %}
+  {%- if site.bing_site_verification != "" %}
+  <meta name="msvalidate.01" content="{{ site.bing_site_verification }}">
+  {%- endif %}
   <meta name="theme-color" content="#0A1B30">
   <meta name="format-detection" content="telephone=no">
 
