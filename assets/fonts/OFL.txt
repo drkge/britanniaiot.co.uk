@@ -1,0 +1,10 @@
+Inter and Newsreader are licensed under the SIL Open Font License, Version 1.1.
+
+  Inter — Copyright (c) 2016 The Inter Project Authors
+          https://github.com/rsms/inter
+  Newsreader — Copyright (c) 2019 The Newsreader Project Authors
+          https://github.com/productiontype/Newsreader
+
+The full licence text is available at https://openfontlicense.org and in each
+project's repository. The licence permits redistribution, including bundling
+the font files with a website, provided this notice is retained.

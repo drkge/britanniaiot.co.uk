@@ -122,10 +122,10 @@ Two things worth checking with your supplier before launch:
   runs no analytics. **This changes the moment you add analytics** — anything beyond
   strictly-necessary storage needs consent under PECR. If you add analytics, prefer a
   cookieless option (Plausible, Fathom) and you can keep the site banner-free.
-- **Google Fonts is the one third-party request.** It sends visitor IP addresses to Google,
-  which is noted in the privacy notice. Some public-sector buyers ask about this. To remove
-  it entirely, self-host Inter and Newsreader in `assets/fonts/` and swap the `<link>` in
-  `_src/build.py` for `@font-face` rules — about twenty minutes of work.
+- **No third-party requests.** Inter and Newsreader are self-hosted in `assets/fonts/`
+  under the SIL Open Font License, so nothing leaves this origin and no visitor IP reaches
+  Google. This is worth stating in a procurement questionnaire; it is a question public
+  sector buyers do ask.
 - Add terms of business and an accessibility statement. **Accessibility matters
   commercially here**: public sector buyers will ask, and WCAG 2.2 AA is a standard
   procurement requirement. The site is built to meet it — semantic landmarks, one `h1` per
