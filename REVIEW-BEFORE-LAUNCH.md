@@ -112,12 +112,8 @@ Two things worth checking with your supplier before launch:
   notice is unfinished is worse than the risk it was hedging.
   **It has still not been reviewed by a lawyer.** It was written to match how the site and
   business actually operate, which is most of the work, but that is not the same thing.
-- **ICO registration.** Most UK organisations processing personal data must pay the annual
-  data protection fee, though there is an exemption for processing limited to core purposes
-  such as staff administration, marketing and accounts. Acting as a processor for customer
-  data may take you outside it. Run the ICO's self-assessment at
-  ico.org.uk/for-organisations/data-protection-fee, and if you are registrable, add the
-  registration number to the privacy notice.
+- **ICO registration.** Decided against for now. The `ico_registration` field in
+  `_config.yml` stays in place and renders nothing, so it is one line if that changes.
 - No cookie banner is present, and none is currently needed: the site sets no cookies and
   runs no analytics. **This changes the moment you add analytics** — anything beyond
   strictly-necessary storage needs consent under PECR. If you add analytics, prefer a
