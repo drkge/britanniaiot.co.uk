@@ -23,7 +23,7 @@
   "description": "Britannia IoT Solutions fits radar fill-level sensors to bins and containers across the UK, then turns the data into collection rounds that only go where there is waste.",
   "slogan": "Sensor-led waste collection for UK councils and contractors",
   "foundingDate": "2026-08-14",
-  "email": "britianniaiot@outlook.com",
+  "email": "{{ site.email }}",
   "telephone": "{{ site.phone }}",
   "address": {
     "@type": "PostalAddress",
@@ -74,7 +74,7 @@
     {
       "@type": "ContactPoint",
       "contactType": "sales",
-      "email": "britianniaiot@outlook.com",
+      "email": "{{ site.email }}",
       "telephone": "{{ site.phone }}",
       "areaServed": "GB",
       "availableLanguage": [

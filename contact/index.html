@@ -96,7 +96,7 @@ schema_json: |
     <div class="split split-article">
       <div>
         <div class="answer-box">
-          <p><strong>To talk to Britannia IoT Solutions about sensor-led waste collection, email <a href="mailto:britianniaiot@outlook.com">britianniaiot@outlook.com</a> or call <a href="tel:{{ site.phone | remove: " " }}">{{ site.phone_display }}</a>. We reply to every enquiry within one working day.</strong></p>
+          <p><strong>To talk to Britannia IoT Solutions about sensor-led waste collection, email <a href="mailto:{{ site.email }}">{{ site.email }}</a> or call <a href="tel:{{ site.phone | remove: " " }}">{{ site.phone_display }}</a>. We reply to every enquiry within one working day.</strong></p>
         </div>
 
         <h2>What a first conversation covers</h2>
@@ -121,11 +121,11 @@ schema_json: |
       <div>
         <div class="contact-card">
           <h2>How to reach us</h2>
-          <a class="contact-row" href="mailto:britianniaiot@outlook.com">
+          <a class="contact-row" href="mailto:{{ site.email }}">
             <span class="contact-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round"><rect x="2.8" y="5" width="18.4" height="14" rx="2.6"/><path d="m3.6 6.8 7.3 5.4a2 2 0 0 0 2.2 0l7.3-5.4"/></svg></span>
             <span class="contact-text">
               <span class="contact-label">Email</span>
-              <span class="contact-value">britianniaiot@outlook.com</span>
+              <span class="contact-value">{{ site.email }}</span>
             </span>
           </a>
           <a class="contact-row" href="tel:{{ site.phone | remove: " " }}">
@@ -155,7 +155,7 @@ schema_json: |
         <div class="keyfacts mt-2" style="margin-bottom:0">
           <h3>Tenders, PQQs and specifications</h3>
           <dl>
-            <dt>Documents</dt><dd>Email <a href="mailto:britianniaiot@outlook.com">britianniaiot@outlook.com</a>, marked for the bid team</dd>
+            <dt>Documents</dt><dd>Email <a href="mailto:{{ site.email }}">{{ site.email }}</a>, marked for the bid team</dd>
             <dt>Specification help</dt><dd>We will supply the technical detail your procurement team needs, and we would rather do it early than respond to a specification that cannot be evaluated</dd>
             <dt>Turnaround</dt><dd>Acknowledged within one working day, with a named contact for the bid</dd>
           </dl>
