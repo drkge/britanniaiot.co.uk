@@ -615,6 +615,31 @@ th:first-child, td:first-child { width: 21%; }
 .section-dark .case-headline,
 .section-dark .card p.case-headline { color: #7CC5FF; }
 
+/* --------------------------------------------------------------- figures -- */
+
+.figure { margin: 2.25rem 0; }
+.figure img {
+  display: block; width: 100%; height: auto;
+  border-radius: var(--r-lg); border: 1px solid var(--line);
+  background: var(--paper-2);
+}
+.figure figcaption {
+  margin-top: .8rem; font-size: .875rem; line-height: 1.55; color: var(--muted);
+}
+.figure figcaption b { color: var(--ink); font-weight: 620; }
+.figure .credit {
+  display: block; margin-top: .35rem;
+  font-size: .78rem; color: var(--muted);
+}
+.figure .credit a { color: var(--muted); text-decoration-thickness: 1px; }
+.figure .credit a:hover { color: var(--brand); }
+.section-dark .figure img { border-color: rgba(255,255,255,.14); background: rgba(255,255,255,.04); }
+.section-dark .figure figcaption, .section-dark .figure .credit { color: #93AECA; }
+.section-dark .figure figcaption b { color: #DCE9F5; }
+.section-dark .figure .credit a { color: #93AECA; }
+
+.figure-inset { margin-top: 0; }
+
 /* ----------------------------------------------------------------- CTA --- */
 
 .cta-band {

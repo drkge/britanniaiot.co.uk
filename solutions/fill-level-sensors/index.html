@@ -191,6 +191,12 @@ schema_json: |
           <p><strong>A bin fill-level sensor is a sealed, battery-powered device fitted inside the lid or top of a waste container, and it is what makes sensor-led waste collection possible. It measures the distance down to the surface of the waste using radar, converts that to a percentage of capacity, and transmits the reading over the NB-IoT mobile network several times a day.</strong></p>
           <p class="mt-1">No wiring, no mains power, no modification to the container. Around ten minutes to fit and register. Battery life of roughly eight years at six readings a day.</p>
         </div>
+        <figure class="figure">
+  <img src="/assets/img/platform/radar-sensor-fitted.jpg" alt="A sealed black radar fill-level sensor unit, roughly the size of a matchbox, with a CE-marked label" width="1080" height="600" loading="lazy" decoding="async">
+  <figcaption><b>The radar sensor.</b> A sealed, shock-resistant unit holding the electronics, battery and mini-radar. It mounts inside the container lid &mdash; no wiring, no mains power, around ten minutes to fit.
+  <span class="credit">Photograph: BrainyBins&reg; / Maacks ApS, used with permission. Britannia IoT Solutions supplies this platform in the United Kingdom.</span></figcaption>
+</figure>
+
         <h2>Why radar rather than ultrasonic</h2>
         <p>This is the single most consequential specification decision in a smart waste project, and it is the one most often got wrong.</p>
         <p>Ultrasonic sensors work by timing a sound pulse. They are cheap and they are fine against a flat, hard, reflective surface. Waste is none of those things. Flattened cardboard absorbs and scatters sound. Paper does the same. Film plastic flutters. A carrier bag hanging near the sensor returns a strong echo from nothing. The result is a stream of readings that look plausible and are wrong, and once a supervisor has been sent to two empty bins flagged as full, the system is finished politically whatever the dashboard says afterwards.</p>
