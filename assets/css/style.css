@@ -618,6 +618,8 @@ th:first-child, td:first-child { width: 21%; }
 /* --------------------------------------------------------------- figures -- */
 
 .figure { margin: 2.25rem 0; }
+/* <picture> is inline by default, which would leave a descender gap under it. */
+.figure picture { display: block; }
 .figure img {
   display: block; width: 100%; height: auto;
   border-radius: var(--r-lg); border: 1px solid var(--line);

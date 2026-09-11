@@ -29,7 +29,7 @@ ico_registration: ""
 indexnow_key: "f3e602c1a930089c306876cbc32a314c"
 
 og_image: /assets/img/og-default.png
-css_version: "7"
+css_version: "8"
 
 plugins:
   - jekyll-sitemap
