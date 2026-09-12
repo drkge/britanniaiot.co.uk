@@ -558,7 +558,11 @@ thead th {
   font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted);
   font-weight: 680; border-bottom: 2px solid var(--line);
 }
-tbody tr:last-child td { border-bottom: 0; }
+tbody tr:last-child td, tbody tr:last-child th { border-bottom: 0; }
+/* The first cell of each body row is a <th scope="row"> so screen readers can
+   announce what a cell belongs to. It is a label, not a column heading, so it
+   keeps the body weight rather than the uppercase thead treatment. */
+tbody th { font-weight: 600; color: var(--ink); }
 td:first-child { font-weight: 600; color: var(--ink); }
 th:first-child, td:first-child { width: 21%; }
 
