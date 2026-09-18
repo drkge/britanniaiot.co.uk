@@ -15,7 +15,14 @@
     "contentUrl": "https://britanniaiot.co.uk/assets/img/logo.png",
     "width": 512,
     "height": 512,
-    "caption": "Britannia IoT Solutions"
+    "caption": "Britannia IoT Solutions",
+    "creator": {
+      "@id": "https://britanniaiot.co.uk/#organization"
+    },
+    "creditText": "Britannia IoT Solutions",
+    "copyrightNotice": "\u00a9 Britannia IoT Solutions Ltd",
+    "license": "https://britanniaiot.co.uk/about/#image-credits",
+    "acquireLicensePage": "https://britanniaiot.co.uk/contact/"
   },
   "image": {
     "@id": "https://britanniaiot.co.uk/#logo"
