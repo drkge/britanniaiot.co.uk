@@ -24,7 +24,7 @@
 
 - [Solutions](https://britanniaiot.co.uk/solutions/): Radar bin fill-level sensors, NB-IoT connectivity, dynamic round planning, a driver app and waste analytics, as one managed UK subscription.
 - [Analytics, forecasting and reporting](https://britanniaiot.co.uk/solutions/analytics-reporting/): Fill history per container, demand heat maps, emptying forecasts, complaint evidence and CO2 reporting, with an open API and full data export.
-- [Fill-level sensors and connectivity](https://britanniaiot.co.uk/solutions/fill-level-sensors/): Radar fill-level sensors for street bins, semi-buried containers and bring sites. Eight-year battery, NB-IoT, ten-minute fit, no wiring or bin changes.
+- [Waste level sensors and connectivity](https://britanniaiot.co.uk/solutions/fill-level-sensors/): Radar waste level sensors for street bins, semi-buried containers and bring sites. Eight-year battery, NB-IoT, ten-minute fit, no wiring or bin changes.
 - [Dynamic round planning](https://britanniaiot.co.uk/solutions/route-optimisation/): Collection rounds rebuilt each morning from live bin fill data, pushed to the driver's tablet with fill levels, navigation and one-tap lift capture.
 
 ## Who we work with
