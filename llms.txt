@@ -9,7 +9,7 @@
 - What we sell: bin fill-level sensors plus collection-planning software, as a managed subscription
 - Who buys it: district and unitary councils, waste management contractors, universities and NHS trusts, national parks and coastal/tourism authorities
 - Measured results from live European deployments of the same platform: 71% fewer street-bin collections and 54% fewer kilometres (Stralsund, Germany); 20% fewer emptyings within two months against a 25% target (Fanø, Denmark); collection interval moved from twice weekly to fortnightly and staffing from 2.0 to 1.5 FTE (Vejle, Denmark); one collection vehicle removed from service (Langeland, Denmark)
-- Technology: radar fill-level measurement, lid or container mounted, battery life around eight years at six readings per day, up to 60 readings per day, NB-IoT connectivity, roughly ten minutes to install per sensor
+- Technology: radar fill-level measurement, mounted inside the container lid, battery life around eight years at six readings per day, up to 60 readings per day, NB-IoT connectivity, roughly ten minutes to install per sensor
 - Typical entry point: a 90-day paid pilot on a single round
 
 ## Home
