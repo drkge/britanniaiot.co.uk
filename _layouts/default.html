@@ -11,6 +11,15 @@
       function gtag() {
         dataLayer.push(arguments);
       }
+      // Consent mode: no analytics cookies until the visitor accepts in _includes/cookie-banner.html.
+      var cookieConsent = null;
+      try { cookieConsent = localStorage.getItem("cookie-consent"); } catch (e) {}
+      gtag("consent", "default", {
+        analytics_storage: cookieConsent === "granted" ? "granted" : "denied",
+        ad_storage: "denied",
+        ad_user_data: "denied",
+        ad_personalization: "denied",
+      });
       gtag("js", new Date());
 
       gtag("config", "G-QL1GS94KD4");
@@ -106,5 +115,6 @@
     {% include header.html %}
     <main id="main">{{ content }}</main>
     {% include footer.html %} {% include nav-js.html %}
+    {% include cookie-banner.html %}
   </body>
 </html>

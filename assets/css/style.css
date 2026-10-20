@@ -781,3 +781,57 @@ a.contact-row:hover .contact-value { color: var(--brand); }
   font-size: .855rem; color: var(--muted);
   margin: 1rem 0 0; padding-top: 1rem; border-top: 1px solid var(--line);
 }
+
+/* --------------------------------------------------------- cookie banner -- */
+
+.cookie-banner {
+  position: fixed;
+  z-index: 60;
+  left: 1rem;
+  right: 1rem;
+  bottom: 1rem;
+  max-width: 22rem;
+  padding: 0.875rem 1rem;
+  background: #fff;
+  color: var(--ink);
+  border: 1px solid var(--line);
+  border-radius: 0.75rem;
+  box-shadow: 0 8px 24px rgb(0 0 0 / 0.12);
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+.cookie-banner[hidden] {
+  display: none;
+}
+.cookie-banner a {
+  color: var(--brand);
+  text-decoration: underline;
+}
+.cookie-actions {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 0.625rem;
+}
+.cookie-actions button {
+  padding: 0.4rem 0.9rem;
+  border: 1px solid var(--brand);
+  border-radius: 0.5rem;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+}
+.cookie-actions .cookie-accept {
+  background: var(--brand);
+  color: #fff;
+}
+.cookie-actions .cookie-decline {
+  background: #fff;
+  color: var(--ink);
+  border-color: var(--line);
+}
+.cookie-actions button:hover {
+  filter: brightness(0.94);
+}
+.cookie-banner p {
+  margin: 0;
+}
